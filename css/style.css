@@ -1,15 +1,47 @@
 /**********************************************
-*** GENERAL
+*** GENERAL CSS
 **********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+body {
+    color: #555;
+    font-family: "Open Sans Semibold", serif;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.right {
+    float: right;
+}
+
+.red {
+    color: #FF5049 !important;
+}
+
+.red-focus:focus {
+    border: 1px solid #FF5049 !important;
+}
+
+/**********************************************
+*** TOP Section
+**********************************************/
+
 .top {
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(background.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(background.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -28,7 +60,7 @@
     font-size: 18px;
     text-align: center;
     margin-bottom: 10px;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .budget-value {
@@ -47,15 +79,23 @@
 
 .budget-income {
     margin-bottom: 10px;
-    background-color: #28B9B5;
+    background-color: mediumseagreen;
+}
+
+
+.income-value,
+.expenses-value {
+    letter-spacing: 1px;
+    float: left;
 }
 
 .income-text,
 .expenses-text {
     float: left;
     font-size: 13px;
-    color: #444;
+    color: #e6e6e6;
     margin-top: 2px;
+    font-weight: bold;
 }
 
 .budget-expenses {
