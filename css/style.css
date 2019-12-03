@@ -1,3 +1,12 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .top {
     height: 40vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(background.png);
@@ -20,4 +29,56 @@
     text-align: center;
     margin-bottom: 10px;
     font-weight: 300;
+}
+
+.budget-value {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.budget-income,
+.budget-expenses {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.budget-income {
+    margin-bottom: 10px;
+    background-color: #28B9B5;
+}
+
+.income-text,
+.expenses-text {
+    float: left;
+    font-size: 13px;
+    color: #444;
+    margin-top: 2px;
+}
+
+.budget-expenses {
+    background-color: #FF5049;
+}
+
+.income-value {
+    letter-spacing: 1px;
+    float: left;
+}
+
+
+.income-percentage,
+.expenses-percentage {
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 10px;
+}
+
+.expenses-percentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
 }
