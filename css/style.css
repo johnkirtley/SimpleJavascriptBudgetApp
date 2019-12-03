@@ -80,6 +80,7 @@ body {
 .budget-income {
     margin-bottom: 10px;
     background-color: mediumseagreen;
+    border-radius: 5px;
 }
 
 
@@ -100,6 +101,7 @@ body {
 
 .budget-expenses {
     background-color: #FF5049;
+    border-radius: 5px;
 }
 
 .income-value {
