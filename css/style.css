@@ -124,3 +124,78 @@ body {
     text-align: center;
     border-radius: 3px;
 }
+
+/**********************************************
+*** Main Container Section
+**********************************************/
+
+.add {
+    padding: 16px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.add-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-type {
+    width: 55px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+.add-description,
+.add-value {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.add-description {
+    width: 500px;
+}
+
+.add-value {
+    width: 100px;
+}
+
+.add-btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.add-btn:active {
+    transform: translateY(2px);
+}
+
+.add-type:focus,
+.add-description:focus,
+.add-value:focus {
+    outline: none;
+    border: 1px solid #28B9B5;
+}
+
+.add-btn:focus {
+    outline: none;
+}
