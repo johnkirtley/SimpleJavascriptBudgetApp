@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>A Simple Javascript Budget Application </title>
@@ -7,75 +8,77 @@
     <link href="css/ionicons.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<!--Index Page Header Section-->
-<div class="top">
-    <div class="budget">
-        <div class="title">
-            Available Budget in <span class="title-month">%Month%</span>:
-        </div>
-
-        <div class="budget-value">+ &euro;3,654.64</div>
-
-        <div class="budget-income clearfix">
-            <div class="income-text">Income</div>
-            <div class="right">
-                <div class="income-value">+ &euro;4,800.00</div>
-                <div class="income-percentage">&nbsp;</div>
+    <!--Index Page Header Section-->
+    <div class="top">
+        <div class="budget">
+            <div class="title">
+                Available Budget in <span id="title-month" class="title-month">%Month%</span>:
             </div>
-        </div>
-        <div class="budget-expenses clearfix">
-            <div class="expenses-text">Expenses</div>
-            <div class="right clearfix">
-                <div class="expenses-value">- &euro;1,584.36</div>
-                <div class="expenses-percentage">46%</div>
+
+            <div class="budget-value">+ &euro;3,654.64</div>
+
+            <div class="budget-income clearfix">
+                <div class="income-text">Income</div>
+                <div class="right">
+                    <div class="income-value">+ &euro;4,800.00</div>
+                    <div class="income-percentage">&nbsp;</div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- End of Index Page Header Section-->
-
-
-<div class="bottom">
-    <div class="add">
-        <div class="add-container">
-            <label>
-                <select class="add-type">
-                    <option selected value="inc">+</option>
-                    <option value="exp">-</option>
-                </select>
-            </label>
-            <label>
-                <input class="add-description" placeholder="Add description" type="text">
-            </label>
-            <label>
-                <input class="add-value" placeholder="Value" type="number">
-            </label>
-            <button class="add-btn"><i class="ion-ios-checkmark-outline"></i></button>
-        </div>
-    </div>
-
-    <div class="container clearfix">
-        <div class="income">
-            <h2 class="income-title">Income</h2>
-
-            <div class="income-list">
-
-
-            </div>
-        </div>
-
-
-        <div class="expenses">
-            <h2 class="expenses-title">Expenses</h2>
-
-            <div class="expenses-list">
-
-
+            <div class="budget-expenses clearfix">
+                <div class="expenses-text">Expenses</div>
+                <div class="right clearfix">
+                    <div class="expenses-value">- &euro;1,584.36</div>
+                    <div class="expenses-percentage">46%</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script src="app.js"></script>
+    <!-- End of Index Page Header Section-->
+
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add-container">
+                <label>
+                    <select class="add-type">
+                        <option selected value="inc">+</option>
+                        <option value="exp">-</option>
+                    </select>
+                </label>
+                <label>
+                    <input class="add-description" placeholder="Add description" type="text">
+                </label>
+                <label>
+                    <input class="add-value" placeholder="Value" type="number">
+                </label>
+                <button class="add-btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            <div class="income">
+                <h2 class="income-title">Income</h2>
+
+                <div class="income-list">
+
+
+                </div>
+            </div>
+
+
+            <div class="expenses">
+                <h2 class="expenses-title">Expenses</h2>
+
+                <div class="expenses-list">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
